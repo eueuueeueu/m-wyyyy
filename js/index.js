@@ -41,6 +41,7 @@ function initScroll(element) {
         songController.style.cssText = `position:fixed;top:${(navBg.getBoundingClientRect().height)}px;left:0;opacity:1;background-color:#fff`
       } else {
         document.querySelector('.song').style.transform = `translateY((${-50 / 3.75})vw)`
+        songController.style.cssText = `none`
       }
     }
     document.addEventListener('touchmove', eleMove)
